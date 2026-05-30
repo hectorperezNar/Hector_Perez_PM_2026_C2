@@ -1,20 +1,20 @@
-#include <stdio.h?
+#include <stdio.h>
 #include <math.h>
 
 /* Par, impar o nulo.
 NUM: Variable de tipo entero. */
 
-int Principal(Vacio)
+int Principal(void)
 {
     int NUM;
-    Printf("Ingrese el numero:");
-    Scanf("%d", &NUM);
-    si (NUM == 0)
-         Printf("n\nulo");
-    si no,
-          si (¡pum! (-1, NUM) > 0)
-             Printf("\nPar");
-          si no,
-                Printf("\nImpar");
-    Regreso 0;
+    printf("Ingrese el numero:");
+    scanf("%d", &NUM);
+    if (NUM == 0)
+         printf("n\nulo");
+    else
+            if(pow (-1, NUM) > 0)
+                printf("\nPar");
+            else
+                printf("\nImpar");
+    return 0;
 }

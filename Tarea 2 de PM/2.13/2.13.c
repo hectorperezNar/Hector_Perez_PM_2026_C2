@@ -17,7 +17,7 @@ int main(void)
         X = 0;
     else
         if (Y <= 10)
-            x = 4 / Y - Y;
+            X = 4 / Y - Y;
         else
             if (Y <= 25)
                 X = pow(Y, 3) - 12;

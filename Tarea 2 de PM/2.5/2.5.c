@@ -11,7 +11,7 @@ void main(void)
 {
     int OP, T;
     float RES;
-    printf("Ingrese la opcion del calculo y el valor entero: ")
+    printf("Ingrese la opcion del calculo y el valor entero: ");
     scanf("%d, %d", &OP, &T);
     switch(OP)
     {

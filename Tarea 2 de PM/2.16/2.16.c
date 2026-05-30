@@ -11,7 +11,7 @@ SAL: variable de tipo real. */
 int main(void)
 {
     int CLA, CAT, ANT, RES;
-    printf("\nIngrese la clave, categoria y antiguedad del trabajador:")
+    printf("\nIngrese la clave, categoria y antiguedad del trabajador:");
     scanf("%d %d %d", &CLA, &CAT, &ANT);
     switch (CAT)
     {

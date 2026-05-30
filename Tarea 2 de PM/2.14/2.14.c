@@ -23,10 +23,10 @@ int main(void)
         case 10: COS = TIE * 0.20 / 60; break;
         case 15: COS = TIE * 0.39 / 60; break;
         case 20: COS = TIE * 0.28 / 60; break;
-        default: cos = -1; break;
+        default: COS = -1; break;
     }
     if (COS != -1)
-        printf("\n\nClave: %d\tTiempo: %d\tCosto: %6.2f, CLA, TIE, COS");
+        printf("\n\nClave: %d\tTiempo: %d\tCosto: %6.2f", CLA, TIE, COS);
     else
         printf("\nError en la clave");
     return 0;
