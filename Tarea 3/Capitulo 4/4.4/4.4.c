@@ -50,6 +50,6 @@ int f4(void)
 /* La funcion f4 utiliza dos variables con el mismo nombre: local y global. */
     {
         int K = 5;
-        K = K + ::K;         /* Uso de la variable local (K) y global (::K) */
+        K = K + K_local;         /* Uso de la variable local (K) y global (::K) */
         return(K);
     }
