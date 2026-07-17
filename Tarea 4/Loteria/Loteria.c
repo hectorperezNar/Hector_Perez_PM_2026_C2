@@ -12,95 +12,86 @@ int main()
     int semilla = 25;
     int i;
 
+do
+{
+    semilla = semilla + 5;
+
+    printf("\n===== LOTERIA =====\n");
+    printf("1. Jugar\n");   
+    printf("2. Elegir cantidad de jugadas\n");
+    printf("3. Salir\n");
+    printf("Seleccione una opcion: ");
+    scanf("%d", &opcion);    
+
+    switch(opcion)
+    {
+    case 1:
+        if(cantidad_jugadas > 0)
+        {printf("\n--- INGRESO DE JUGADAS ---\n");
+        for(i = 0; i < cantidad_jugadas; i++)
+        {
+        printf("\nJugada %d\n", i + 1);
+
     do
     {
-        semilla = semilla + 5;
+        printf("Ingrese un numero (1-40): ");
+        scanf("%d", &numeros[i]);
 
-        printf("\n===== LOTERIA =====\n");
-        printf("1. Jugar\n");
-        printf("2. Elegir cantidad de jugadas\n");
-        printf("3. Salir\n");
-        printf("Seleccione una opcion: ");
-        scanf("%d", &opcion);
-
-        switch(opcion)
+        if(numeros[i] < 1 || numeros[i] > 40)
         {
-            case 1:
+            printf("Numero invalido.\n");
+        }                  }
+            while(numeros[i] < 1 || numeros[i] > 40);
 
-                if(cantidad_jugadas > 0)
-                {
-                    printf("\n--- INGRESO DE JUGADAS ---\n");
+    do
+    {
+        printf("Cantidad apostada: ");
+        scanf("%f", &apuesta[i]);
 
-                    for(i = 0; i < cantidad_jugadas; i++)
-                    {
-                        printf("\nJugada %d\n", i + 1);
+        if(apuesta[i] <= 0)
+        {
+            printf("La apuesta debe ser mayor que cero.\n");
+        }                  }
+        while(apuesta[i] <= 0);
 
-                        do
-                        {
-                            printf("Ingrese un numero (1-40): ");
-                            scanf("%d", &numeros[i]);
+        semilla = semilla + numeros[i];
+        }
+    }
 
-                            if(numeros[i] < 1 || numeros[i] > 40)
-                            {
-                                printf("Numero invalido.\n");
-                            }
+numero_premiado = (semilla % 40) + 1;
 
-                        }
-                        while(numeros[i] < 1 || numeros[i] > 40);
+    printf("\n========================");
+    printf("\nNumero ganador: %d", numero_premiado);
+    printf("\n========================\n");
+    hubo_ganador = 0;
 
-                        do
-                        {
-                            printf("Cantidad apostada: ");
-                            scanf("%f", &apuesta[i]);
+    for(i = 0; i < cantidad_jugadas; i++)
+    {
+      if(numeros[i] == numero_premiado)
+   {
+   printf("\nFelicidades.\n");
+   printf("Jugada ganadora: %d\n", i + 1);
+   printf("Numero jugado: %d\n", numeros[i]);
+   printf("Dinero apostado: %.2f\n", apuesta[i]);
+   printf("Premio ganado: %.2f\n", apuesta[i] * 1000);
 
-                            if(apuesta[i] <= 0)
-                            {
-                                printf("La apuesta debe ser mayor que cero.\n");
-                            }
+   hubo_ganador = 1;
+    }
+    }
 
-                        }
-                        while(apuesta[i] <= 0);
+    if(hubo_ganador == 0)
+    {
+    printf("\nNo hubo jugadas ganadoras.\n");
+    }
+     }
+else
+ {
+    printf("\nPrimero debe elegir la cantidad de jugadas en la opcion 2.\n");
+ }
+    break;
 
-                        semilla = semilla + numeros[i];
-                    }
-
-                    numero_premiado = (semilla % 40) + 1;
-
-                    printf("\n========================");
-                    printf("\nNumero ganador: %d", numero_premiado);
-                    printf("\n========================\n");
-
-                    hubo_ganador = 0;
-
-                    for(i = 0; i < cantidad_jugadas; i++)
-                    {
-                        if(numeros[i] == numero_premiado)
-                        {
-                            printf("\nFelicidades.\n");
-                            printf("Jugada ganadora: %d\n", i + 1);
-                            printf("Numero jugado: %d\n", numeros[i]);
-                            printf("Dinero apostado: %.2f\n", apuesta[i]);
-                            printf("Premio ganado: %.2f\n", apuesta[i] * 1000);
-
-                            hubo_ganador = 1;
-                        }
-                    }
-
-                    if(hubo_ganador == 0)
-                    {
-                        printf("\nNo hubo jugadas ganadoras.\n");
-                    }
-                }
-                else
-                {
-                    printf("\nPrimero debe elegir la cantidad de jugadas.\n");
-                }
-
-                break;
-
-            case 2:
-
-                do
+     case 2:
+        do
                 {
                     printf("\nCantidad de jugadas (1-40): ");
                     scanf("%d", &cantidad_jugadas);
