@@ -19,7 +19,7 @@ void main(void)
 void Lectura(int A[][C][P], int FI, int C0, int PR)
 
 {
-    int, K, I, J;
+    int K, I, J;
     for (K=0; K<PR; K++)
     for (I=0; I<FI; I++)
     for (J=0; J<C0; J++)
@@ -29,3 +29,56 @@ void Lectura(int A[][C][P], int FI, int C0, int PR)
     }
 }
 
+void Funcion1(int A[][C][P], int FI, int C0, int PR)
+
+{
+    int K, I, J, MAY = 0, A0 = -1, SUM;
+    for (I=0; I<FI; I++)
+    {
+        SUM = 0;
+        for (I=0; I<FI; I++)
+            for (J=0; J<C0; J++)
+            SUM += A[I][J][K];
+        if (SUM > MAY)
+        {
+            MAY = SUM;
+            A0 = K;
+        }
+    }
+    printf("\n\nAño con mayor ingreso de alumnos: %d Alumnos: %d ", A0+1, MAY);
+}
+
+void Funcion2(int A[][C][P], int FI, int C0, int PR)
+{
+    int I, J, MAY = 0, CAR = -1, SUM;
+    for (I=0; I<FI; I++)
+    {
+        SUM = 0;
+        for(J=0; J<C0; J++)
+            SUM += A[I][J][PR-1];
+        if (SUM > MAY)
+        {
+            MAY = SUM;
+            CAR - I;
+        }
+    }
+    printf("\n\nCarrera con mayor numero de alumnos: %d Alumnos: %d", CAR+1, MAY);
+}
+
+void Funcion3(int A[][C][P], int FI, int C0, int PR)
+{
+    int K, J, MAY = 0, A0 = -1, SUM;
+    for (K=0; K<PR; K++)
+    {
+        SUM = 0;
+        for (J=0; J<C0; J++)
+            SUM += A[FI-1][J][K];
+        if (SUM > MAY)
+        {
+            MAY = SUM;
+            A0 = K;
+        }
+            
+    }
+    printf("\n\nAño con mayor ingreso de alumnos: %d Alumnos: %d", A0+1, MAY);
+}
