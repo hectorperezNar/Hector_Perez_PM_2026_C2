@@ -1,0 +1,65 @@
+{
+    "Alumnos":
+    [
+        {
+            "Nombre": "Alfredo",
+            "Apellido": "Pacheco",
+            "Promedio": 9.2,
+            "Materia": "Dibujo Tecnico"
+        },
+        {
+            "Nombre": "Cocote",
+            "Apellido": "Peralta",
+            "Promedio": 9.7,
+            "Materia": "Precalculo"
+        },
+        {
+            "Nombre": "Juan",
+            "Apellido": "Betermit",
+            "Promedio": 8.4,
+            "Materia": "Precalculo"
+        },
+        {
+            "Nombre": "Hector",
+            "Apellido": "Perez",
+            "Promedio": 10,
+            "Materia": "Programacion para Mecatronicos"
+        },
+        {
+            "Nombre": "Pico",
+            "Apellido": "Pala",
+            "Promedio": 7.7,
+            "Materia": "Fisica General"
+        },
+        {
+            "Nombre": "Yensel",
+            "Apellido": "Abreu",
+            "Promedio": 9.8,
+            "Materia": "Dibujo Tecnico"
+        },
+        {
+            "Nombre": "Carlos",
+            "Apellido": "Pichardo",
+            "Promedio": 9.8,
+            "Materia": "Precalculo"
+        },
+        {
+            "Nombre": "Maria",
+            "Apellido": "Cruz",
+            "Promedio": 6,
+            "Materia": "Fisica General"
+        },
+        {
+            "Nombre": "Pedro",
+            "Apellido": "De los Santos",
+            "Promedio": 9.2,
+            "Materia":"Programacion para Mecatronicos"
+        },
+        {
+            "Nombre": "Jairo",
+            "Apellido": "Taveras",
+            "Promedio": 9.5,
+            "Materia": "Dibujo Tecnico"
+        }
+    ]
+}
