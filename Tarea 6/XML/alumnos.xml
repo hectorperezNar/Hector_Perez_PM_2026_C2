@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Alumnos>
+
+    <Alumno>
+        <Nombre>Juan</Nombre>
+        <Apellido>Rodriguez</Apellido>
+        <Promedio>8.5</Promedio>
+        <Materia>Precalculo</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Pedro</Nombre>
+        <Apellido>Perez</Apellido>
+        <Promedio>9.2</Promedio>
+        <Materia>Dibujo Tecnico</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Carlos</Nombre>
+        <Apellido>Lopez</Apellido>
+        <Promedio>7.8</Promedio>
+        <Materia>Programacion para Mecatronicos</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Maria</Nombre>
+        <Apellido>Martinez</Apellido>
+        <Promedio>10</Promedio>
+        <Materia>Precalculo</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Luis</Nombre>
+        <Apellido>Alberto</Apellido>
+        <Promedio>7</Promedio>
+        <Materia>Fisica General</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Sofia</Nombre>
+        <Apellido>Garcia</Apellido>
+        <Promedio>8.3</Promedio>
+        <Materia>Dibujo Tecnico</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Alan</Nombre>
+        <Apellido>Sanchez</Apellido>
+        <Promedio>9.8</Promedio>
+        <Materia>Programacion para Mecatronicos</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Marcos</Nombre>
+        <Apellido>Galvan</Apellido>
+        <Promedio>10</Promedio>
+        <Materia>Precalculo</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Elvis</Nombre>
+        <Apellido>Pichardo</Apellido>
+        <Promedio>8.5</Promedio>
+        <Materia>Fisica General</Materia>
+    </Alumno>
+
+    <Alumno>
+        <Nombre>Mia</Nombre>
+        <Apellido>Peralta</Apellido>
+        <Promedio>5</Promedio>
+        <Materia>Precalculo</Materia>
+    </Alumno>
+
+</Alumnos>
